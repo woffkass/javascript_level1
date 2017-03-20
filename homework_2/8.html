@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 8</title>
+</head>
+<body>
+    <script>
+        function power(val, pow) {
+            var powerVal;
+            
+            if (pow>1) {
+                powerVal=val*(power(val, pow-1));
+            }
+            else {
+                return (val);
+            }
+            return(powerVal);
+        }
+        alert(power(2, 16));
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 5 и 6 и 7</title>
+</head>
+<body>
+    <script>
+        function summ(x, y) {
+            var s;
+            s = x+y;
+            return (s);
+        }
+        function diff(x, y) {
+            var d;
+            d = x-y;
+            return (d);
+        }
+        function mult(x, y) {
+            var m;
+            m = x*y;
+            return (m);
+        }
+        function divis(x, y) {
+            var d;
+            d = x/y;
+            return (d);
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'сумма':
+                return summ(arg1,arg2);
+                break; //это лишнее после предидущей строки функция закочит выполнение
+                case 'разнось':
+                return diff(arg1,arg2);
+                break;
+                case 'произведение':
+                return mult(arg1,arg2);
+                break;
+                case 'отношение':
+                return divis(arg1,arg2);
+                break;
+            }
+        }
+        alert (mathOperation(5, 4, 'сумма'));
+        alert (mathOperation(5, 4, 'разнось'));
+        alert (mathOperation(5, 4, 'произведение'));
+        alert (mathOperation(5, 4, 'отношение'));
+    </script>
+    <p>При сравнении 0 с null результа false потому что null равно только undefined</p>
+</body>
+</html>
