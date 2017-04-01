@@ -1,0 +1,59 @@
+.board {
+    width: 780px;
+    height: 780px;
+    border-width: 8px;
+    border-style: double;
+    border-color: burlywood;
+}
+
+.row {
+    clear: both;
+}
+
+.square {
+    float: left;
+    width: 88px;
+    height: 88px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.corner {
+    width: 28px;
+    height: 28px;
+    background-color: burlywood;
+}
+
+.border1 {
+    height: 28px;
+    background-color: #ffffaa;
+}
+
+.border1 > span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.border2 {
+    width: 28px;
+    background-color: #ffffaa;
+}
+
+.border2 > span {
+    display: inline-block;
+    margin-top: 37px;
+}
+
+.black {
+    background-color: #888888;
+    font-size: 66px;
+}
+
+.white {
+    background-color: #ffffdd;
+    font-size: 66px;
+}
